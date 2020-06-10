@@ -6,6 +6,7 @@ $(document).ready(
     $('.with-dropdown').mouseenter(
       function() {
         $(this).children('.dropdown').addClass('open');
+        // Ressetto il menu delle lingue qualora fosse aperto quando si apre un altro menu dropdown
         $('.lang-select .dropdown').removeClass('open');
         $('.lang-select i').removeClass('fa-angle-up');
         $('.lang-select i').addClass('fa-angle-down');
