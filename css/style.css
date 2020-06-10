@@ -1,0 +1,74 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL RULES */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+header {
+  width:100%;
+  /* background-color: red;  TODO: remove this */
+  padding: 0 5%;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  line-height: 70px;
+  height: 70px;
+}
+
+.menu img.logo {
+  height: 35px;
+  display: inline-block;
+  vertical-align:middle;
+  padding-bottom: 7px;
+}
+
+.left-navigation a {
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+ul li:last-child {
+  margin-right: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1em;
+  color: #b8bbbf;
+  transition: color .2s ease-in-out;
+}
+
+ul li a:hover {
+  color: #000;
+}
+
+li a.round-btn {
+  padding: 8px 18px;
+  border:1px solid #eb008d;
+  border-radius: 30px;
+  background-color: #eb008d; /*PINK*/
+  color: #fff;
+  transition: all .2s ease;
+}
+
+li a.round-btn:hover {
+  border:1px solid #eb008d;
+  background-color: #fff;
+  color: #eb008d;
+}
