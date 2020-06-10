@@ -16,16 +16,38 @@
   <body>
     <header>
       <div class="menu">
+        <!-- Navigazione a sinistra -->
         <ul class="left-navigation">
           <li> <a href="#"> <img class="logo" src="img/logo-revolut.png" alt=""> </a> </li>
           <li><a href="#">personale</a></li>
           <li><a href="#">business</a></li>
         </ul>
+        <!-- Navigazione a destra -->
         <ul class="right-navigation">
           <li><a href="#">tariffazione</a></li>
           <li><a href="#">conti</a></li>
-          <li><a href="#">prodotti</a></li>
-          <li><a href="#">azienda</a></li>
+          <li class="with-dropdown">
+            <a href="#">prodotti</a>
+            <!-- Dropdown prodotti -->
+            <ul class="dropdown">
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">Super stuff <sup>Nuovo</sup> </a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </li>
+          <li class="with-dropdown">
+            <a href="#">azienda</a>
+            <!-- Dropdown azienda -->
+            <ul class="dropdown">
+              <li><a href="#">chi siamo</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">lavora con noi</a></li>
+              <li><a href="#">affiliates <sup>Nuovo</sup> </a></li>
+              <li><a href="#">contatti</a></li>
+            </ul>
+          </li>
           <li><a href="#">aiuto</a></li>
           <li><a href="#">IT</a></li>
           <li><a class="round-btn" href="#">Scarica l'app</a></li>
