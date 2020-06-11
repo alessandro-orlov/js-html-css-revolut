@@ -38,5 +38,12 @@ $(document).ready(
       }
     );
 
+    // Mobile menu
+    $('.mobile-navigation i').click(
+        function() {
+          $('.mobile-menu').slideToggle(200).toggleClass('open-menu');
+        }
+    );
+
   }
 );
