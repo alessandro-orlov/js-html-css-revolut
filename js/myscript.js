@@ -38,12 +38,25 @@ $(document).ready(
       }
     );
 
-    // Mobile menu
-    $('.mobile-navigation i').click(
+    // OPEN Mobile menu
+    $('.mobile-navigation .burger').click(
         function() {
-          $('.mobile-menu').slideToggle(200).toggleClass('open-menu');
+          $('.mobile-menu').slideToggle(500).toggleClass('open-burger-menu');
         }
     );
+
+    $('.mobile-dropdown').on('click',
+      function() {
+        $(this).find('.mobile-undermenu').slideToggle(500).toggleClass('open-mobile-dropdown');
+        if( $(this).find('i').hasClass('fa-angle-down') ) {
+          $(this).find('i').removeClass('fa-angle-down');
+          $(this).find('i').addClass('fa-angle-up');
+        } else {
+            $(this).find('i').removeClass('fa-angle-up');
+            $(this).find('i').addClass('fa-angle-down');
+          }
+      }
+  );
 
   }
 );

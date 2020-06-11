@@ -23,8 +23,8 @@
           <!-- Navigazione a sinistra -->
           <ul class="left-navigation">
             <li> <a href="#"> <img class="logo" src="img/logo-revolut.png" alt=""> </a> </li>
-            <li><a href="#">personale</a></li>
-            <li><a href="#">business</a></li>
+            <li class="mobile-hidden uppercase"><a href="#">personale</a></li>
+            <li class="mobile-hidden uppercase"><a href="#">business</a></li>
           </ul>
 
           <div class="desktop-navigation">
@@ -76,16 +76,72 @@
             </ul>
           </div>
 
+          <!-- MENU MOBILE -->
           <div class="mobile-navigation">
-            <a href="#"><i class="fas fa-bars"></i></a>
+            <!-- burger icon  -->
+            <a href="#"><i class="fas fa-bars burger"></i></a>
 
             <ul class="mobile-menu">
-              <li><a href="#">tariffazione</a></li>
-              <li><a href="#">conti</a>
-              <li><a href="#">prodotti</a>
-              <li><a href="#">azienda</a></li>
-              <li><a href="#">aiuto</a></li>
-              <li><a href="#">seleziona lingua</a></li>
+              <li class="uppercase">
+                <a href="#">personale</a>
+              </li>
+
+              <li class="uppercase">
+                <a href="#">business</a>
+              </li>
+
+              <li>
+                <a href="#">tariffazione</a>
+              </li>
+
+              <li class="mobile-dropdown">
+                <a href="#">conti <i class="fas fa-angle-down"></i></a>
+                <!-- Dropdown conti mobile-->
+                <ul class="mobile-undermenu">
+                  <li><a href="#">Standard</a></li>
+                  <li><a href="#">Premium</a></li>
+                  <li><a href="#">Metal</a></li>
+                </ul>
+              </li>
+
+              <li class="mobile-dropdown">
+                <a href="#">prodotti <i class="fas fa-angle-down"></i></a>
+                <!-- Dropdown scelta prodotti mobile-->
+                <ul class="mobile-undermenu">
+                  <li><a href="#">link</a></li>
+                  <li><a href="#">link</a></li>
+                  <li><a href="#">link</a></li>
+                  <li><a href="#">Super stuff <sup>Nuovo</sup> </a></li>
+                  <li><a href="#">link</a></li>
+                </ul>
+              </li>
+
+              <li class="mobile-dropdown">
+                <a href="#">azienda <i class="fas fa-angle-down"></i></a>
+                <!-- Dropdown azienda mobile-->
+                <ul class="mobile-undermenu">
+                  <li><a href="#">chi siamo</a></li>
+                  <li><a href="#">blog</a></li>
+                  <li><a href="#">lavora con noi</a></li>
+                  <li><a href="#">affiliates <sup>Nuovo</sup> </a></li>
+                  <li><a href="#">contatti</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">aiuto</a>
+              </li>
+
+              <li class="mobile-dropdown">
+                <a href="#">seleziona lingua <i class="fas fa-angle-down"></i></a>
+                <!-- Dropdown scelta della lingua -->
+                <ul class="mobile-undermenu">
+                  <li><a href="#">Inglese</a></li>
+                  <li><a href="#">Italiano</a></li>
+                  <li><a href="#">Spagnolo</a></li>
+                  <li><a href="#">Tedesco <sup>Nuovo</sup> </a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </nav>

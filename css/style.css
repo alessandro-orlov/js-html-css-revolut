@@ -39,8 +39,12 @@ img.logo {
   padding-bottom: 7px;
 }
 
-.left-navigation a {
+.uppercase a {
   text-transform: uppercase;
+}
+
+.left-navigation li.mobile-hidden {
+  display: none;
 }
 
 ul {
@@ -106,6 +110,8 @@ li a.round-btn:hover {
   display: inline-block;
 }
 
+/* =========== */
+/* Mobile menu */
 .mobile-menu {
   width: 100%;
   text-align: center;
@@ -114,17 +120,26 @@ li a.round-btn:hover {
   left: 0;
   display: none;
   height: calc(100vh - 70px);
+  background-color: #fff;
 }
 
-.open-menu {
+.mobile-undermenu {
+  display: none;
+  background-color: #f5f5f5;
+}
+
+.open-mobile-dropdown {
   display: block;
 }
-
 
 /* MEDIA QUERY */
 @media screen and (min-width:970px) {
   .desktop-navigation {
     display: block;
+  }
+
+  .left-navigation li.mobile-hidden {
+    display: inline-block;
   }
 
   .mobile-navigation {
